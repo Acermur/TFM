@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diagnóstico Médico</title>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diagnóstico Médico</title>
+</head>
+<body>
+    <h1>Formulario de Diagnóstico</h1>
+    <form method="post" action="/" enctype="multipart/form-data">
+        <!-- Atributos Clínicos -->
+        <div>
+            <label for="erythema">Erythema:</label>
+            <input type="number" id="erythema" name="erythema" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="scaling">Scaling:</label>
+            <input type="number" id="scaling" name="scaling" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="definite_borders">Definite Borders:</label>
+            <input type="number" id="definite_borders" name="definite_borders" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="itching">Itching:</label>
+            <input type="number" id="itching" name="itching" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="koebner_phenomenon">Koebner Phenomenon:</label>
+            <input type="number" id="koebner_phenomenon" name="koebner_phenomenon" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="polygonal_papules">Polygonal Papules:</label>
+            <input type="number" id="polygonal_papules" name="polygonal_papules" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="follicular_papules">Follicular Papules:</label>
+            <input type="number" id="follicular_papules" name="follicular_papules" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="oral_mucosal_involvement">Oral Mucosal Involvement:</label>
+            <input type="number" id="oral_mucosal_involvement" name="oral_mucosal_involvement" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="knee_and_elbow_involvement">Knee and Elbow Involvement:</label>
+            <input type="number" id="knee_and_elbow_involvement" name="knee_and_elbow_involvement" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="scalp_involvement">Scalp Involvement:</label>
+            <input type="number" id="scalp_involvement" name="scalp_involvement" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="family_history">Family History (0 or 1):</label>
+            <input type="number" id="family_history" name="family_history" min="0" max="1" required>
+        </div>
+
+        <!-- Atributos Histopatológicos -->
+        <div>
+            <label for="melanin_incontinence">Melanin Incontinence:</label>
+            <input type="number" id="melanin_incontinence" name="melanin_incontinence" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="eosinophils_in_the_infiltrate">Eosinophils in the Infiltrate:</label>
+            <input type="number" id="eosinophils_in_the_infiltrate" name="eosinophils_in_the_infiltrate" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="PNL_infiltrate">PNL Infiltrate:</label>
+            <input type="number" id="PNL_infiltrate" name="PNL_infiltrate" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="fibrosis_of_the_papillary_dermis">Fibrosis of the Papillary Dermis:</label>
+            <input type="number" id="fibrosis_of_the_papillary_dermis" name="fibrosis_of_the_papillary_dermis" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="exocytosis">Exocytosis:</label>
+            <input type="number" id="exocytosis" name="exocytosis" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="acanthosis">Acanthosis:</label>
+            <input type="number" id="acanthosis" name="acanthosis" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="hyperkeratosis">Hyperkeratosis:</label>
+            <input type="number" id="hyperkeratosis" name="hyperkeratosis" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="parakeratosis">Parakeratosis:</label>
+            <input type="number" id="parakeratosis" name="parakeratosis" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="dlubbing_of_the_rete_ridges">Clubbing of the Rete Ridges:</label>
+            <input type="number" id="dlubbing_of_the_rete_ridges" name="dlubbing_of_the_rete_ridges" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="elongation_of_the_rete_ridges">Elongation of the Rete Ridges:</label>
+            <input type="number" id="elongation_of_the_rete_ridges" name="elongation_of_the_rete_ridges" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="thinning_of_the_suprapapillary_epidermis">Thinning of the Suprapapillary Epidermis:</label>
+            <input type="number" id="thinning_of_the_suprapapillary_epidermis" name="thinning_of_the_suprapapillary_epidermis" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="spongiform_pustule">Spongiform Pustule:</label>
+            <input type="number" id="spongiform_pustule" name="spongiform_pustule" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="munro_microabcess">Munro Microabcess:</label>
+            <input type="number" id="munro_microabcess" name="munro_microabcess" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="focal_hypergranulosis">Focal Hypergranulosis:</label>
+            <input type="number" id="focal_hypergranulosis" name="focal_hypergranulosis" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="disappearance_of_the_granular_layer">Disappearance of the Granular Layer:</label>
+            <input type="number" id="disappearance_of_the_granular_layer" name="disappearance_of_the_granular_layer" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="vacuolisation_and_damage_of_basal_layer">Vacuolisation and Damage of Basal Layer:</label>
+            <input type="number" id="vacuolisation_and_damage_of_basal_layer" name="vacuolisation_and_damage_of_basal_layer" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="spongiosis">Spongiosis:</label>
+            <input type="number" id="spongiosis" name="spongiosis" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="saw_tooth_appearance_of_retes">Saw-tooth Appearance of Retes:</label>
+            <input type="number" id="saw_tooth_appearance_of_retes" name="saw_tooth_appearance_of_retes" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="follicular_horn_plug">Follicular Horn Plug:</label>
+            <input type="number" id="follicular_horn_plug" name="follicular_horn_plug" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="perifollicular_parakeratosis">Perifollicular Parakeratosis:</label>
+            <input type="number" id="perifollicular_parakeratosis" name="perifollicular_parakeratosis" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="inflammatory_monoluclear_inflitrate">Inflammatory Monoluclear Inflitrate:</label>
+            <input type="number" id="inflammatory_monoluclear_inflitrate" name="inflammatory_monoluclear_inflitrate" min="0" max="3" required>
+        </div>
+        <div>
+            <label for="band_like_infiltrate">Band-like Infiltrate:</label>
+            <input type="number" id="band_like_infiltrate" name="band_like_infiltrate" min="0" max="3" required>
+        </div>
+
+        <!-- Campo para la edad -->
+        <div>
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" min="0" required>
+        </div>
+
+        <!-- Campo para cargar un archivo CSV -->
+        <div>
+            <label for="file">O carga un archivo CSV con los datos:</label>
+            <input type="file" id="file" name="file" accept=".csv">
+        </div>
+
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
+
+
+
