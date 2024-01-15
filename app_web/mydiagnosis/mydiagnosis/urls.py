@@ -17,11 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from diagnosis import views
+from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('diagnosis/', views.svm_predict, name='svm_predict'),
     path('', views.home, name='home'),
+    path('favicon.ico', RedirectView.as_view(url='/static/images/favicon.ico')),
 ]
 
 
