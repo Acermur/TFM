@@ -7,8 +7,14 @@ from django.conf import settings
 svm_model_path = os.path.join(settings.BASE_DIR, 'modelos', 'optimized_svm_model.joblib')
 scaler_path = os.path.join(settings.BASE_DIR, 'modelos', 'scaler.joblib')
 
-svm_model = load(svm_model_path)
-scaler = load(scaler_path)
+try:
+    svm_model = load(svm_model_path)
+    scaler = load(scaler_path)
+except Exception as e:
+    print(f"Error loading SVM model: {e}")
+
+
+
 
 
     
