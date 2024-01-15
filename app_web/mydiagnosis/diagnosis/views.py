@@ -65,11 +65,9 @@ def svm_predict(request):
         try:
             features = [float(x) if x is not None else 0.0 for x in features]
         except ValueError:
-            # Manejar el caso en que la conversión falle
-            # Por ejemplo, podrías configurar un mensaje de error y volver a mostrar el formulario
             return render(request, 'formulario.html', {'error': 'Invalid input'})
 
-        # Preprocesar los datos según lo necesite tu modelo (si es necesario)
+        # Preprocesar los datos 
         features_scaled = scaler.transform([features])
 
         # Realizar la predicción
@@ -78,5 +76,5 @@ def svm_predict(request):
         # Enviar la predicción a la plantilla de resultado
         return render(request, 'resultado.html', {'prediction': prediction[0]})
 
-    # Mostrar el formulario si no es una solicitud POST
+    # Mostrar el formulario 
     return render(request, 'formulario.html')
