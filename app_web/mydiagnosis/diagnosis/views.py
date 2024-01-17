@@ -15,7 +15,13 @@ except Exception as e:
 
 
 
-
+class_names = {
+    1: 'psoriasis',
+    2: 'seborrheic dermatitis',
+    3: 'lichen planus',
+    4: 'pityriasis rosea',
+    5: 'chronic dermatitis',
+    6: 'pityriasis rubra pilaris'}
 
     
 def home(request):
@@ -72,9 +78,9 @@ def svm_predict(request):
 
         # Realizar la predicción
         prediction = svm_model.predict(features_scaled)
-
+        prediction_class = class_names.get(prediction[0], "Unknown disease")
         # Enviar la predicción a la plantilla de resultado
-        return render(request, 'resultado.html', {'prediction': prediction[0]})
+        return render(request, 'resultado.html', {'prediction': prediction_class})
 
     # Mostrar el formulario 
     return render(request, 'formulario.html')
